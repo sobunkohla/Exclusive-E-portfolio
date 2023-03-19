@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobu Nkohla</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("smA1y_ypshEF1HFrw");
+      })();
+    </script>
+  </head>
+  <body>
+    <section id="about-me" onmousemove="moveBackground(event)">
+      <nav>
+        <figure class="personal__logo">
+          <img id="personal-logo" src="./assets/logo.png" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="#languages"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Languages</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black nav--adjust"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="menu">
+          <div class="open--menu menu--button"><i class="fas fa-bars"></i></div>
+          <div class="menu__Background">
+            <div class="close--menu menu--button">
+              <i class="fas fa-times"></i>
+            </div>
+            <ul class="menu--list">
+              <li class="menu--links">
+                <a
+                  href="#languages"
+                  class="menu__link--anchor link__hover-effect link__hover-effect--white"
+                  >Languages</a
+                >
+              </li>
+              <li class="menu--links">
+                <a
+                  href="#projects"
+                  class="menu__link--anchor link__hover-effect link__hover-effect--white"
+                  >Projects
+                </a>
+              </li>
+              <li class="menu--links" onclick="toggleModal()">
+                <a
+                  href="#"
+                  class="menu__link--anchor link__hover-effect link__hover-effect--white"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="about-me__info--container">
+        <div class="about-me--content">
+          <div class="about-me__description">
+            <h1 class="about-me--title">
+              Hey! <br />
+              <span class="text--blue"> I'm Sobu </span> <br /><span
+                class="about-me__robot"
+                ><figure class="about-me__picture--mask">
+                  <img
+                    src="./assets/Sobu.jpg"
+                    alt="photo of me"
+                    class="about-me__picture"
+                  /></figure
+              ></span>
+            </h1>
+            <p class="about-me__info--paragraph">
+              I am a
+              <b class="text--blue">skilled software developer </b>with
+              experience in <b class="text--blue">frontend development</b> and a
+              passion for creating intuitive user interfaces. I have a strong
+              foundation in building visually appealing and functional web
+              applications.
+              <br />
+              Here's a bit more
+              <b class="text--blue pointer" onclick="toggleModal()">about me</b>
+            </p>
+            <div class="about-me__links">
+              <a href="" target="_blank" class="about-me__link click">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/sobunkohla"
+                target="_blank"
+                class="about-me__link click"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="mailto: sobunkohla@gmail.com"
+                target="_blank"
+                class="about-me__link click"
+              >
+                <i class="far fa-envelope"></i>
+              </a>
+              <a
+                href="./assets/Example Resume.pdf"
+                target="_blank"
+                class="about-me__link click"
+              >
+                <i class="fas fa-file-pdf"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+         <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__half--about">
+          <h3 class="modal__title modal__title--about">
+            Here's A bit About Me
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Software Engineer
+          </h4>
+          <p class="modal__para">
+            I'm a 17-year-old South African
+            <b class="text--blue">frontend developer </b>with unmatched
+            adaptability and an insatiable passion for creating
+            <b class="text--blue"> engaging user experiences</b>
+            <br />
+            <br />
+            No matter the company, With a track record of
+            <b class="text--blue"> unmatched </b>adaptability and
+            <b class="text--blue">top-notch </b>collaboration skills, expect
+            <b class="text--blue">results </b> captivate, inspire, and leave a
+            lasting impression.
+          </p>
+
+          <div class="language__list">
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="HTML"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">HTML</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="css"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">CSS</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
+                  alt="javascript"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">Javascript</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                  alt="react js"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">React js</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal__half modal__half--contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Let's Have A Chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            Ready for a new journey.
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required>
+              </textarea>
+            </div>
+            <button id="contact__submit" class="form__submit click">
+              Send it to me
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thank You For The Message! Looking forward to seeing you soon
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <img src="./assets/circle.svg" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" class="shape shape--2" />
+      <img src="./assets/circle.svg" class="shape shape--3" />
+      <img src="./assets/triangle.svg" class="shape shape--4" />
+      <img src="./assets/semi circle.svg" class="shape shape--5" />
+      <img src="./assets/squiggly.svg" class="shape shape--6" />
+      <img src="./assets/circle.svg" class="shape shape--7" />
+      <img src="./assets/semi circle.svg" class="shape shape--8" />
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            These Are Some of my <span class="text--blue">Projects</span>
+          </h1>
+          <p class="section__description">
+            I have a projects section where I showcase my web development
+            projects. They come with a brief description, list of technologies
+            used, and live demos or code repository links. These projects
+            demonstrate my versatility as a developer, from simple to complex
+            projects. As a developer, I'm always looking to learn and grow, and
+            these projects represent my potential in this field. I believe they
+            showcase the value I can bring to a team as a software developer.
+          </p>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/blinker mockup.png"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Stratak web-templates
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    A Responsive Saas Website with a bit of space theme to the
+                    NASA lovers, a website for the family to be amazed at with
+                    the right corelation of style and color to bring out the
+                    best of its content and maximize its total potential
+                    fruition, along with javascript to corelate the animation
+                    and styling with some functionality in the components.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/sobunkohla/Stratek-Website"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://sobunkohla.github.io/Stratek-Website/"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Eportfolio YT.png"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">E-library</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JAVASCRIPT
+                  </h4>
+                  <p class="project__description--para">
+                    E-commerce style e-Library with a simplistic web design,
+                    easy for customers to work with, and a with corelating color
+                    to component design for customers to feel a sense of
+                    comfortability and recognition to easily instil it in their
+                    mind.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/sobunkohla/Library"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://readiction.netlify.app/"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/chat.png" alt="" class="project__img" />
+                <div class="project__description">
+                  <h3 class="project__description--title">ChatSite</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JAVASCRIPT, FIREBASE
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate unde molestiae velit veniam deleniti ad aperiam
+                    voluptas libero, illo error nisi rem enim perferendis
+                    obcaecati minima, harum, laudantium ipsa labore.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://mywebsite.com"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="languages">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Working <span class="text--blue">with me</span>
+          </h1>
+          <p class="section__description">
+            I am a confident and capable software developer who is committed to
+            delivering high-quality work and making a meaningful contribution to
+            any team. I have a strong foundation in frontend development and a
+            passion for creating intuitive and engaging user experiences.
+          </p>
+          <div class="working__container">
+            <div class="working__row">
+              <h1 class="working__title">Communication</h1>
+              <div class="working">
+                <figure class="working__img--wrapper">
+                  <img
+                    src="./assets/undraw_business_deal_re_up4u.svg"
+                    alt=""
+                    class="working__img"
+                  />
+                </figure>
+                <div class="working__description">
+                  <p class="working__description--para">
+                    Effective communication is key to the success of any
+                    project, and I am a strong communicator who is comfortable
+                    working in both remote and in-person environments.
+                  </p>
+                  <p class="working__description--para">
+                    I am skilled at using tools such as Slack and Zoom to stay
+                    in touch with team members and ensure that projects are
+                    completed smoothly and efficiently.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="working__row">
+              <h1 class="working__title">
+                <span class="text--blue"> Adaptability </span>
+              </h1>
+              <div class="working adaptability">
+                <figure class="working__img--wrapper">
+                  <img
+                    src="./assets/undraw_data_trends_re_2cdy.svg"
+                    alt=""
+                    class="working__img"
+                  />
+                </figure>
+                <div class="working__description">
+                  <p class="working__description--para">
+                    I am adaptable and able to work effectively in a variety of
+                    environments and with different technologies.
+                  </p>
+                  <p class="working__description--para">
+                    I am always seeking opportunities to learn and grow as a
+                    developer and am comfortable taking on new challenges and
+                    learning new skills.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="working__row">
+              <h1 class="working__title">Responsibility</h1>
+              <div class="working">
+                <figure class="working__img--wrapper">
+                  <img
+                    src="./assets/undraw_websites.svg"
+                    alt=""
+                    class="working__img"
+                  />
+                </figure>
+                <div class="working__description">
+                  <p class="working__description--para">
+                    I take my responsibilities seriously and am committed to
+                    meeting deadlines and delivering high-quality work. I am
+                    also reliable and dependable, and I take pride in my ability
+                    to complete tasks efficiently and effectively.
+                  </p>
+                  <p class="working__description--para">
+                    I am confident that my skills and abilities make me an asset
+                    to any team, and I am excited to apply them to real-world
+                    projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="row footer__row">
+          <a href="#" class="footer__anchor">
+            <figure class="footer__logo--wrapper">
+              <img class="footer__logo--img" src="./assets/logo.png" alt="" />
+            </figure>
+            <span class="footer__logo--popper">top⬆</span>
+          </a>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/sobunkohla"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              >github</a
+            >
+            <a
+              href="https://linkedin.com"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              >Linkedin</a
+            >
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              onclick="toggleModal()"
+              >Contact</a
+            >
+            <a
+              href="./assets/Example Resume.pdf"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              download="resume"
+              >Resume</a
+            >
+          </div>
+          <div class="footer__copyright">Copyright &copy; 2023 Sobu Nkohla</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
