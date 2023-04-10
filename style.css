@@ -206,7 +206,7 @@ color: black;
   width: 50px;
   height: 50px;
   filter: invert(1) brightness(-1000%);
-  transform: scale(1.7);
+
 }
 
 nav {
@@ -243,9 +243,9 @@ nav {
   position: absolute;
   top: 0;
   background-color: #242424;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left:0;
+ width: 0;
+ height: 100%;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -256,11 +256,13 @@ nav {
 }
 .menu__open {
  max-height: 100vh;
+
  overflow: hidden;
 }
 .menu__open .menu__Background {
   transform: translateX(0);
   visibility: visible;
+  width: 100%;
   opacity: 1; 
 } 
 
@@ -488,7 +490,7 @@ z-index: 100;
 /* About-me */
 
 #about-me {
-  min-height: 100vh;
+ min-height: 100vh;
   
 }
 
@@ -500,6 +502,7 @@ z-index: 100;
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 1000px;
+  
  
 }
 .about-me--content {
@@ -774,7 +777,7 @@ footer {
 }
 .footer__logo--img{
   width: 100%;
-  transform: scale(1.9);
+ 
 }
 .footer__logo--wrapper{
   width: 70px;
@@ -939,6 +942,7 @@ h1{
 .modal__half {
   width: 100%;
 }
+
 p{
   font-size: 20px;
 }
@@ -991,11 +995,18 @@ font-size: 32px;
  .nav__link--anchor {
    display: none;
  }
+ .about-me--title{
+ font-size: 60px !important;
+ }
+ .ab
  .mail__btn {
   display: none;
  }
  .nav--adjust{
   display: flex;
+ }
+ .about-me__info--paragraph {
+  font-size: 14px  !important;
  }
  .menu {
   display: block;
